@@ -31,7 +31,7 @@ func main() {
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080")
 }
 
 // postAlbums adds an album from JSON received in the request body.
